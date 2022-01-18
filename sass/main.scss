@@ -319,17 +319,55 @@ h1.company-name {
 	}
 	&__item {
 		margin: 1em 0;
-		
 	}
 	&__item-icon {
 		width: 50px;
-
 	}
-	&__item-name{
+	&__item-name {
 		margin-top: 0;
 		margin-bottom: 1.5em;
 		font-size: 1.8rem;
 		color: $gold;
+	}
+}
+
+//newsletter
+.newsletter {
+	padding: 8em 2em;
+	background-color: $red;
+	text-align: center;
+
+	&__text {
+		padding: 1em;
+		margin-bottom: 1em;
+		font-size: 4rem;
+		font-weight: 200;
+	}
+
+	&__form {
+		input {
+			margin-bottom: 1em;
+			padding: 1em;
+			width: 100%;
+			background-color: $white;
+			border: 1px solid transparent;
+		}
+
+		button {
+			padding: 1em 2em;
+			border: 1px solid $gold;
+			background: none;
+
+			// font-size: 1.8rem;
+			color: $gold;
+			font-weight: bold;
+			cursor: pointer;
+			transition: background-color 0.3s, color 0.3s;
+			&:hover {
+				background-color: $gold;
+				color: $red;
+			}
+		}
 	}
 }
 
